@@ -5,17 +5,17 @@ using namespace std;
 int main()
 {
 	char ch='13',pass[25];
-	int index=0;
+	int i1=0;
 	while(true)
 	{
 		ch=getch();
 		if(ch==13)
 		{
-			pass[index]='\0';
+			pass[i1]='\0';
 			break;
 		}
-		pass[index]=ch;
-		index++;
+		pass[i1]=ch;
+		i1++;
 	}
 	if(strcmp(pass,"abcd@125")==0)
 		cout<<"Valid Password\n";
